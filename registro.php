@@ -10,7 +10,7 @@ $mail = new PHPMailer(true);
 
 
 require_once("config/database.php");
-date_default_timezone_set("America/Lima");
+date_default_timezone_set("America/Mexico");
 
 $database = new Database();
 $db = $database->getConnection();
@@ -146,7 +146,7 @@ if(is_ajax())
 
 			    //Recipients
 			    $mail->setFrom('nuevocorreo17@gmail.com', 'ALonso');
-			    $mail->addAddress('jacobo.amaru@gmail.com', 'Jacobo Amaru');
+			    $mail->addAddress('correo@gmail.com', 'Jacobo Amaru');
 
   
 			    $mail->isHTML(true);
